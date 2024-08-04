@@ -1,0 +1,563 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#7aa841">
+    <title>Michaela's Garden Services</title>
+    <!-- Booststrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Font Awesome CSS -->
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" crossorigin="anonymous"> -->
+    <script src="https://kit.fontawesome.com/7d48f70d81.js" crossorigin="anonymous"></script>
+    <!-- Custom CSS-->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- Custom Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" href="/images/favicons/apple-touch-icon.png">
+    <link rel="icon" href="/images/favicons/favicon-32x32.png" type="image/png" sizes="32x32">
+    <link rel="icon" href="/images/favicons/favicon-16x16.png" type="image/png" sizes="16x16">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#212529" media="(prefers-color-scheme: dark)">
+    <!-- Color Mode Toggler-->
+    <script src="scripts/color-mode-toggler.js"></script>
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript" src="scripts/email.js"></script>
+</head>
+
+<body data-bs-theme="" id="about" class="d-flex flex-column h-100">
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar navbar-expand-lg mt-lg-4">
+        <div class="container-lg container-fluid-md">
+            <a class="navbar-brand my-auto logo" href="index.html">
+                <div class="logo-img d-inline-block align-text-top" alt="Logo"></div>
+                <span class="d-none d-sm-block fs-5 fw-bold ff-montserrat text-uppercase ms-2">Michaela's Garden
+                    Services</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link pe-4" href="#philosophy">Philosophy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pe-4" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pe-4" href="#pricing">Pricing</a>
+                    </li>
+                    <!--
+                    <li class="nav-item">
+                        <a class="nav-link pe-4" href="#testomonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pe-4" href="#gallery">Gallery</a>
+                    </li>
+                    -->
+                    <li class="nav-item pe-4">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item pe-4">
+                        <a class="nav-link"
+                            href="https://www.facebook.com/people/Michaelas-Garden-Services/61563819449109/"
+                            target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                    </li>
+                </ul>
+                <div class="nav-item form-check form-switch ms-0 ps-0">
+                    <input class="form-check-input" type="checkbox" id="darkModeSwitch" checked>
+                    <label class="form-check-label" for="darkModeSwitch"><i class="fa-regular fa-sun"></i></label>
+                    <label class="form-check-label" for="darkModeSwitch"><i class="fa-regular fa-moon"></i></label>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- About -->
+    <section>
+        <div class="container">
+            <div class="row h-100">
+                <div class="col-lg-6">
+                    <span class="d-inline-block me-2">
+                        <h1 class="display-4 fw-bold">Hi,</h1>
+                    </span>
+                    <span class="d-inline-block">
+                        <h1 class="display-4 fw-bold ">I'm Michaela</h1>
+                    </span>
+                    <p class="lead fw-light">A very friendly, reliable, nature-first gardener who can help you get the
+                        best out of your garden in an organic way.</p>
+                    <p class="lead fw-light">I am currently available to complete regular garden maintenance, or ad-hoc
+                        work, covering
+                        Chesterfield and the surrounding area.</p>
+                    <p class="lead fw-light">I look forward to hearing from you so we can get started on making your
+                        garden somewhere you
+                        can relax and enjoy!</p>
+                    <a class="btn btn-lg btn-success my-3" href="#contact">Get in touch</a>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block">
+                    <img src="images/flower-1.jpeg" alt="hero-img" class="header-image rounded-4">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications -->
+    <section class="bg-body-tertiary">
+        <div class="container">
+            <div class="row gy-3">
+                <div class="col-md-6 col-lg-4">
+                    <div class="d-flex flex-row h-100 bg-primary-subtle rounded-3 p-4">
+                        <i class="fa-solid fa-award fa-hover text-primary display-1 me-4 my-auto text-center"></i>
+                        <div class="d-flex flex-column">
+                            <h5 class="ff-montserrat fw-bold my-auto">Qualified
+                                horticulturalist</h5>
+                            <p class="mb-0">RHS Level 2 Diploma</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="d-flex flex-row h-100 bg-warning-subtle rounded-3 p-4">
+                        <i
+                            class="fa-solid fa-calendar-plus fa-hover text-warning display-1 me-4 my-auto text-center"></i>
+                        <div class="d-flex flex-column">
+                            <h5 class="ff-montserrat fw-bold my-auto">Three years</h5>
+                            <p class="mb-0">Professional experience</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="d-flex flex-row h-100 bg-danger-subtle rounded-3 p-4">
+                        <i
+                            class="fa-solid fa-clipboard-check fa-hover text-danger display-1 me-4 my-auto text-center"></i>
+                        <div class="d-flex flex-column">
+                            <h5 class="ff-montserrat fw-bold my-auto">Fully insured</h5>
+                            <p class="mb-0"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Philosophy -->
+    <section class="">
+        <div id="philosophy" class="container">
+            <div class="row">
+                <div class="col">
+                    <h2>My Philosophy</h2>
+                    <p>I’m a big advocate for right plant, right place. When you give plants the correct growing
+                        conditions they flourish and
+                        put on a beautiful show with minimal interference.</p>
+
+                    <p>My aim is to promote gardening practices that respect and enhance the natural world and the
+                        creatures living in it.
+
+                        I believe in working with nature, not against it. This means:</p>
+
+                    <ul class="list-unstyled">
+                        <li class="list-item mb-2">
+                            <div class="d-flex align-items-center">
+                                <div class="my-auto me-3 fs-4"><i class="fa-regular fa-circle-check text-success"></i>
+                                </div>
+                                <div><strong>Organic Gardening: </strong>No harmful chemicals, only natural
+                                    fertilisers
+                                    and pest control.</div>
+                            </div>
+                        </li>
+                        <li class="list-item mb-2">
+                            <div class="d-flex align-items-center">
+                                <div class="my-auto me-3 fs-4"><i class="fa-regular fa-circle-check text-success"></i>
+                                </div>
+                                <div><strong>Biodiversity:</strong> Planting a
+                                    variety of species to support local wildlife and pollinators.</div>
+                            </div>
+                        </li>
+                        <li class="list-item mb-2">
+                            <div class="d-flex align-items-center">
+                                <div class="my-auto me-3 fs-4"><i class="fa-regular fa-circle-check text-success"></i>
+                                </div>
+                                <div><strong>Sustainability: </strong>Practices
+                                    like composting, mulching and water conservation.</div>
+                            </div>
+                        </li>
+                    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <p>Join me in creating beautiful, sustainable gardens that bring joy and benefit wildlife.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="bg-body-tertiary">
+        <div id="services" class="container mb-4">
+            <div class="row">
+                <div class="col mb-2">
+                    <h2>Services</h2>
+                    <p>I offer many gardening services, mostly focusing on flower beds and borders.</p>
+                </div>
+            </div>
+            <div class="row gy-4 mb-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-body d-flex flex-row h-100">
+                        <i class="fa fa-seedling text-success fs-2 me-4 my-auto"></i>
+                        <div class="d-flex flex-column">
+                            <h5 class="my-auto">Weeding</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-body d-flex flex-row h-100">
+                        <i class="fa fa-skull fs-2 me-4 my-auto"></i>
+                        <div class="d-flex flex-column">
+                            <h5 class="my-auto">Dead-heading</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-body d-flex flex-row h-100">
+                        <i class="fa fa-spa text-danger fs-2 me-4 my-auto"></i>
+                        <div class="d-flex flex-column">
+                            <h5 class="">Rose Pruning</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-body d-flex flex-row h-100">
+                        <i class="fa fa-leaf text-success fs-2 me-4 my-auto"></i>
+                        <div class="d-flex flex-column">
+                            <h5 class="my-auto">Plant installation and removal</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-body d-flex flex-row h-100">
+                        <i class="fa fa-lightbulb text-warning fs-2 me-4 my-auto"></i>
+                        <div class="d-flex flex-column">
+                            <h5 class="my-auto">Bulb planting</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-body d-flex flex-row h-100">
+                        <i class="fa fa-cut text-secondary fs-2 me-4 my-auto"></i>
+                        <div class="d-flex flex-column">
+                            <h5 class="my-auto">Lawn edging</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-body d-flex flex-row h-100">
+                        <i class="fa fa-broom text-secondary fs-2 me-4 my-auto"></i>
+                        <div class="d-flex flex-column">
+                            <h5 class="my-auto">Spring garden tidy</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-body d-flex flex-row h-100">
+                        <i class="fa fa-mountain text-secondary fs-2 me-4 my-auto"></i>
+                        <div class="d-flex flex-column">
+                            <h5 class="my-auto">Mulching</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-body d-flex flex-row h-100">
+                        <i class="fa fa-tint text-primary fs-2 me-4 my-auto"></i>
+                        <div class="d-flex flex-column">
+                            <h5 class="my-auto">Watering</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-body d-flex flex-row h-100">
+                        <i class="fa fa-tree text-success fs-2 me-4 my-auto text-center"></i>
+                        <div class="d-flex flex-column">
+                            <h5 class="my-auto">Small scale topiary</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-body d-flex flex-row h-100">
+                        <i class="fa fa-shower text-primary fs-2 me-4 my-auto"></i>
+                        <div class="d-flex flex-column">
+                            <h5 class="my-auto">Plant pot cleaning</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-body d-flex flex-row h-100">
+                        <i class="fa fa-tools text-secondary fs-2 me-4 my-auto"></i>
+                        <div class="d-flex flex-column">
+                            <h5 class="my-auto">Hand tool maintenance</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-body d-flex flex-row h-100">
+                        <i class="fa fa-vial fs-2 me-4 my-auto"></i>
+                        <div class="d-flex flex-column">
+                            <h5 class="my-auto">Soil testing</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-body d-flex flex-row h-100">
+                        <i class="fa-solid fa-circle-question text-danger fs-2 me-4 my-auto"></i>
+                        <div class="d-flex flex-column">
+                            <h5 class="my-auto">Planting advice</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-body d-flex flex-row h-100">
+                        <i class="fa-solid fa-carrot text-warning fs-2 me-4 my-auto"></i>
+                        <div class="d-flex flex-column">
+                            <h5 class="my-auto">Kitchen gardens</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section>
+        <div id="pricing" class="container">
+            <div class="row">
+                <div class="col">
+                    <h2>Pricing</h2>
+                </div>
+            </div>
+            <div class="row gx-5 justify-content-center mt-4">
+
+
+
+                <div class="col-5">
+                    <div class="card bg-success rounded-5 text-center text-white mb-1">
+                        <div class="card-body">
+                            <h4 class="my-1"><i class="fa-regular fa-calendar me-2"></i>£150 / Day</h4>
+                        </div>
+                    </div>
+                    <p class="text-center text-secondary fw-light"><small>One Day is 6.5 hours</small></p>
+                </div>
+                <div class="col-5">
+                    <div class="card bg-primary rounded-5 text-center text-white mb-1">
+                        <div class="card-body">
+                            <h4 class="my-1"><i class="fa-regular fa-clock me-2"></i>£25 / Hour</h3>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Gallery -->
+    <!-- <section class="bg-success">
+        <div id="gallery" class="container mb-4">
+            <div class="row">
+                <div class="col">
+                    <h1>Gallery</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem maiores quos modi ut numquam
+                        exercitationem est culpa aperiam dolor, natus deserunt illum magni eaque fuga delectus provident
+                        rerum molestiae neque.</p>
+                </div>
+            </div>
+        </div> -->
+
+    <!-- Testamonials -->
+    <!-- <section>
+        <div id="testomonials" class="container mb-4">
+            <div class="row">
+                <div class="col">
+                    <h2 class="fw-semibold">Testamonials</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem maiores quos modi ut numquam
+                        exercitationem est culpa aperiam dolor, natus deserunt illum magni eaque fuga delectus provident
+                        rerum molestiae neque.</p>
+
+                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="carousel-content py-4">
+                                    <ul class="feedback-stars fs-5 gap-1 ps-0">
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star-half"></i></li>
+                                    </ul>
+                                    <blockquote>
+                                        <p class="lead">I highly recommend this business. Their customer service is
+                                            second
+                                            to
+                                            none.
+                                            The product quality is consistently outstanding, exceeding my
+                                            expectations every
+                                            time.</p>
+                                    </blockquote>
+                                    <h6>Amy Chives</h6>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-content py-4">
+                                    <ul class="feedback-stars fs-5 gap-1 ps-0">
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                    </ul>
+                                    <blockquote>
+                                        <p class="lead">I was completely impressed with their professionalism and
+                                            customer
+                                            service. “The
+                                            ambiance here is always inviting and comfortable.
+                                            This is my go-to place for gardening - the best in town.</p>
+                                    </blockquote>
+                                    <h6>John Onions</h6>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-content py-4">
+                                    <ul class="feedback-stars fs-5 gap-1 ps-0">
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                    </ul>
+                                    <blockquote>
+                                        <p class="lead">Their staff is not only friendly but also highly skilled.
+                                            Pricing
+                                            is fair and
+                                            transparent - definitely value for money.
+                                            Efficiency and punctuality are hallmarks of their service.</p>
+                                    </blockquote>
+                                    <h6>Abdul Potato</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+
+    <!-- Contact -->
+    <section class="bg-body-tertiary">
+        <div class="container mb-4">
+            <div class="row">
+                <div class="col">
+                    <h2 class="fw-semibold" id="contact">Contact</h2>
+                    <div id="contact-submit-success" class="alert alert-success d-none" role="alert">
+                        Your message has been sent sucessfully, we'll be in touch soon!
+                    </div>
+                    <div id="contact-submit-fail" class="alert alert-danger d-none" role="alert">
+                        Sorry! Something when wrong submitting your message. Please <a
+                            href="mailto:michaelasgardening@icloud.com?subject=Website Enquiry"" class="
+                            alert-link">click here</a>
+                        to
+                        send an email
+                        instead.
+                    </div>
+                    <form id="contact-form" class="needs-validation" novalidate>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="nameInput" placeholder="Your Name"
+                                name="contact_name" required>
+                            <label for="nameInput">Name</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control needs-validation" id="emailInput"
+                                placeholder="name@example.com" name="contact_email" required>
+                            <label for=" emailInput">Email</label>
+                            <div class="invalid-feedback">
+                                Please provide a valid email address
+                            </div>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="phoneInput" placeholder="(00000) 000 000"
+                                name="contact_phone" required>
+                            <label for="phoneInput">Phone</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control needs-validation" placeholder="Enter your address here"
+                                id="addressInput" style="height: 100px" name="address" required></textarea>
+                            <label for="addressInput">Address</label>
+                        </div>
+                        <div class="form-floating">
+                            <textarea class="form-control needs-validation" placeholder="Enter your message here"
+                                id="messageInput" style="height: 100px" name="message" required></textarea>
+                            <label for="messageInput">Message</label>
+                        </div>
+                        <button type="submit" class="btn btn-success mt-3">Submit</button>
+                    </form>
+                    <div class="d-flex justify-content-end">
+                        <a href="#about" target="_self" aria-label="Scroll back to top"><button id="scrollToTopBtn"
+                                class="btn btn-outline-secondary btn-scroll-top rounded-5"><i
+                                    class="fa-solid fa-arrow-up"></i></button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer data-bs-theme="dark" class="mt-auto">
+        <p class="text-center pt-2">
+            <small><i class="fa fa-code me-2"></i>Code by Mark Branscombe | &copy; 2024</small>
+        </p>
+    </footer>
+
+
+    <!-- Booststrap Javascript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- Custom scripts -->
+    <script src="scripts/validate-forms.js"></script>
+    <script src="scripts/hover-animations.js"></script>
+    <script src="scripts/scroll-to-top.js"></script>
+
+
+</body>
+
+</html>

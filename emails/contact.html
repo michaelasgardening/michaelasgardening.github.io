@@ -1,0 +1,97 @@
+<style>
+    a {
+        text-decoration: none;
+    }
+
+    header {
+        padding: 1.5rem 0;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    table,
+    th,
+    td {
+        border-collapse: collapse;
+        border: 1px solid #99ABB1;
+    }
+
+    td {
+        padding: 1rem;
+    }
+
+    .container {
+        font-family: sans-serif;
+        font-size: 1rem;
+    }
+
+    .row {
+        width: 80%;
+        margin: 1.5rem auto;
+    }
+
+    .logo {
+        align-items: center;
+        display: flex;
+    }
+
+    .logo-text {
+        align-items: center;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        color: black;
+        font-weight: 700;
+        margin-left: 0.5rem;
+    }
+</style>
+
+<div class="container">
+    <header class="row">
+        <a class="logo" href="https://michaelasgardenservices.co.uk">
+            <img src="https://michaelasgardenservices.co.uk/images/logo-light.png" alt="Logo" height="40"
+                class="d-inline-block align-text-top">
+            <span class="logo-text">Michaela's Garden
+                Services</span></a>
+    </header>
+
+    <div class="row">
+        <div class="pre-header">
+            <h1>Hi Michaela,</h1>
+            <p>You got a new message from <strong>{{contact_name}}</strong> via <a
+                    href="https://michaelasgardenservices.co.uk">Michaela's Garden
+                    Services:</a>
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div>
+            <table>
+                <tr>
+                    <td width="30%">Contact Name:</td>
+                    <td>{{contact_name}}</td>
+                </tr>
+                <tr>
+                    <td>Contact Email:</td>
+                    <td><a href="mailto:{{contact_email}}">{{contact_email}}</a></td>
+                </tr>
+                <tr>
+                    <td>Contact Phone:</td>
+                    <td>{{contact_phone}}</td>
+                </tr>
+                <tr>
+                    <td>Address:</td>
+                    <td>{{address}}</td>
+                </tr>
+                <tr>
+                    <td>Message:</td>
+                    <td>{{message}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <footer class="row">
+        <p></p>
+    </footer>
+</div>
