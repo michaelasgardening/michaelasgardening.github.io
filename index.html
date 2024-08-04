@@ -489,16 +489,14 @@
                 <div class="col">
                     <h2 class="fw-semibold" id="contact">Contact</h2>
                     <div id="contact-submit-success" class="alert alert-success d-none" role="alert">
-                        Your message has been sent sucessfully, we'll be in touch soon!
+                        Your message has been sent sucessfully, I'll be in touch soon!
                     </div>
                     <div id="contact-submit-fail" class="alert alert-danger d-none" role="alert">
-                        Sorry! Something when wrong submitting your message. Please <a
-                            href="mailto:michaelasgardening@icloud.com?subject=Website Enquiry"" class="
-                            alert-link">click here</a>
-                        to
-                        send an email
-                        instead.
+                        Sorry! Something went wrong submitting your message. Please <a
+                            href="mailto:michaelasgardening@icloud.com?subject=Website Enquiry" class="
+                            alert-link">click here</a> to send an email instead.
                     </div>
+
                     <form id="contact-form" class="needs-validation" novalidate>
                         <div class="form-floating mb-3">
                             <input type="text" class="form-control" id="nameInput" placeholder="Your Name"
@@ -519,10 +517,32 @@
                             <label for="phoneInput">Phone</label>
                         </div>
                         <div class="form-floating mb-3">
-                            <textarea class="form-control needs-validation" placeholder="Enter your address here"
-                                id="addressInput" style="height: 100px" name="address" required></textarea>
-                            <label for="addressInput">Address</label>
+                            <input class="form-control needs-validation" placeholder="Enter your address here"
+                                id="addressLineOneInput" name="address_line1" autocomplete="address-line1"
+                                required></input>
+                            <label for="addressLineOneInput">Address Line 1</label>
                         </div>
+
+
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-floating mb-3">
+                                    <input class="form-control needs-validation" placeholder="Enter your address here"
+                                        id="addressLevelTwoInput" name="address_level2" autocomplete="address-level2"
+                                        required></input>
+                                    <label for="addressLevelTwoInput">Town / City</label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-floating mb-3">
+                                    <input class="form-control needs-validation" placeholder="Enter your address here"
+                                        id="postalCodeInput" name="postal_code" autocomplete="postal-code"
+                                        required></input>
+                                    <label for="postalCodeInput">Post Code</label>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="form-floating">
                             <textarea class="form-control needs-validation" placeholder="Enter your message here"
                                 id="messageInput" style="height: 100px" name="message" required></textarea>

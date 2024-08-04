@@ -15,7 +15,7 @@
                 // Send email via EmailJS (www.emailjs.com/)
                 var contactForm = document.getElementById('contact-form');
                 event.preventDefault();
-                emailjs.sendForm('service_8w81iv5', 'contact_form', contactForm)
+                emailjs.sendForm('michaelas_gardening', 'contact_form', contactForm)
                     .then(() => {
                         console.log('SUCCESS!');
                         document.getElementById('contact-submit-success').classList.remove('d-none');
