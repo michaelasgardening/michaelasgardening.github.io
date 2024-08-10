@@ -155,12 +155,6 @@ h2 {
     max-width: 100%;
 }
 
-/* Services */
-.card-hover-success:hover {
-    background-color: var(--green);
-    color: #ffffff;
-}
-
 /* Carousel */
 .carousel-control-next,
 .carousel-control-prev {
