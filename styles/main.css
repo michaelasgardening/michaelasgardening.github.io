@@ -40,7 +40,6 @@
 :root,
 [data-bs-theme=dark] {}
 
-
 html {
     scroll-behavior: smooth;
     padding-top: max(0, env(safe-area-inset-top));
@@ -154,6 +153,12 @@ h2 {
 /* About */
 .header-image {
     max-width: 100%;
+}
+
+/* Services */
+.card-hover-success:hover {
+    background-color: var(--green);
+    color: #ffffff;
 }
 
 /* Carousel */
