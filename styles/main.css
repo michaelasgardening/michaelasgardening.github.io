@@ -40,6 +40,7 @@
 :root,
 [data-bs-theme=dark] {}
 
+/* 
 html {
     scroll-behavior: smooth;
     padding-top: max(0, env(safe-area-inset-top));
@@ -47,6 +48,7 @@ html {
     padding-bottom: max(0, env(safe-area-inset-bottom));
     padding-right: max(0, env(safe-area-inset-left));
 }
+    */
 
 section {
     padding-top: 2rem;
