@@ -15,6 +15,7 @@
     --light: #e2e7e9;
     --dark: rgb(30, 36, 39);
     --dark-bg-accent: rgba(16, 18, 19, 0.03);
+    --gardeners-guild-green: #009454;
 
     /* Bootstrap Overrides */
     --bs-primary-rgb: 64, 92, 218;
@@ -220,4 +221,22 @@ h2 {
 
 [data-bs-theme=dark] .coming-soon-img {
     background-image: url(../images/logo-dark.png);
+}
+
+.gardeners-guild {
+    background-image: url(../images/gardeners-guild-simple.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    min-height: 6.5rem;
+
+}
+
+.bg-gardeners-guild {
+    background-color: var(--gardeners-guild-green);
+}
+
+.border-gardeners-guild {
+    border-color: var(--gardeners-guild-green) !important;
 }
