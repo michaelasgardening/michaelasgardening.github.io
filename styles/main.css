@@ -230,7 +230,10 @@ h2 {
     background-repeat: no-repeat;
     background-origin: content-box;
     min-height: 6.5rem;
+}
 
+.gardeners-guild-link {
+    text-decoration: none !important;
 }
 
 .bg-gardeners-guild {
