@@ -243,3 +243,7 @@ h2 {
 .border-gardeners-guild {
     border-color: var(--gardeners-guild-green) !important;
 }
+
+.gardners-guild-img {
+    height: 5rem;
+}
