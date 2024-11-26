@@ -247,3 +247,18 @@ h2 {
 .gardners-guild-img {
     height: 5rem;
 }
+
+@media only screen and (max-width: 600px) {}
+
+.gardners-guild-img {
+    height: calc(1.625rem + 4.5vw);
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}
