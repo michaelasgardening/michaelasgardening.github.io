@@ -228,12 +228,8 @@ h2 {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    background-origin: content-box;
-    min-height: 6.5rem;
-}
 
-.gardeners-guild-link {
-    text-decoration: none !important;
+    /* min-height: 6.5rem; */
 }
 
 .bg-gardeners-guild {
@@ -242,23 +238,4 @@ h2 {
 
 .border-gardeners-guild {
     border-color: var(--gardeners-guild-green) !important;
-}
-
-.gardners-guild-img {
-    height: 5rem;
-}
-
-@media only screen and (max-width: 600px) {}
-
-.gardners-guild-img {
-    height: calc(1.625rem + 4.5vw);
-}
-
-
-
-
-@media only screen and (max-width: 600px) {
-    body {
-        background-color: lightblue;
-    }
 }
