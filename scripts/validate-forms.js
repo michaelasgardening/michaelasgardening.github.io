@@ -13,7 +13,9 @@
                 event.stopPropagation()
             } else {
                 // Send email via EmailJS (www.emailjs.com/)
+                var submitButton = document.getElementById('submit-btn');
                 var contactForm = document.getElementById('contact-form');
+                submitButton.classList.add('disabled');
                 event.preventDefault();
                 emailjs.sendForm('michaelas_gardening', 'contact_form', contactForm)
                     .then(() => {
