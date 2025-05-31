@@ -392,26 +392,109 @@
         <div id="pricing" class="container">
             <div class="row">
                 <div class="col">
-                    <h2>Pricing</h2>
+                    <h2>Pricing, Terms and Conditions</h2>
                 </div>
             </div>
-            <div class="row gx-5 justify-content-center mt-4">
-                <div class="col-5">
-                    <div class="card bg-success rounded-5 text-center text-white mb-1">
+            <div class="row justify-content-center mt-4">
+                <div class="col-lg-6">
+                    <div class="card bg-primary rounded-5 text-center text-white my-auto">
                         <div class="card-body">
-                            <h4 class="my-1"><i class="fa-regular fa-calendar me-2"></i>£150 / Day</h4>
-                        </div>
-                    </div>
-                    <p class="text-center text-secondary fw-light"><small>One Day is 6.5 hours</small></p>
-                </div>
-                <div class="col-5">
-                    <div class="card bg-primary rounded-5 text-center text-white mb-1">
-                        <div class="card-body">
-                            <h4 class="my-1"><i class="fa-regular fa-clock me-2"></i>£25 / Hour</h3>
+                            <div class="display-3 fw-bold lh-1">£25</div>
+                            <div class="fs-2 fw-lighter ms-1 lh-1">per hour</div>
+                            <div class="fs-6 fw-lighter mt-3 opacity-75">minimum one hour</div>
                         </div>
                     </div>
                 </div>
+                <div class="mt-5 text-center">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal"
+                        data-bs-target="#termsAndConditionsModal">Click here to read my Terms and
+                        Conditions</button>
+                </div>
+            </div>
+        </div>
 
+
+        <!-- Modal -->
+        <div class="modal fade" id="termsAndConditionsModal" tabindex="-1"
+            aria-labelledby="termsAndConditionsModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="termsAndConditionsModalLabel">Gardening Services Contract</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>The following outlines the agreement between the Customer and Michaela, the Gardener. A
+                            formal signature is not required. The Customer’s request for or acceptance of services
+                            confirms their agreement to
+                            these terms and conditions.</p>
+                        <h5 class="modal-title">Payment:</h5>
+                        <p>The service fee is calculated based on the time of arrival to departure.</p>
+                        <p>The service fee is £25 per hour (minimum 1 hour unless agreed by both parties)</p>
+                        <p>The Customer agrees to settle the payment promptly and no later than 7 days from the work
+                            carried out, unless otherwise
+                            agreed. If payment is not received before the next scheduled visit, services will be
+                            suspended
+                            until all outstanding
+                            amounts are paid.</p>
+                        <h5 class="modal-title">Pet Waste Charges:</h5>
+                        <p>The Customer acknowledges that pet waste removal is not included in standard services. If
+                            required, an additional charge
+                            of £15 per visit will apply.</p>
+                        <h5 class="modal-title">Scope of Services:</h5>
+                        <p>The gardener agrees to perform the agreed-upon services, which may include some or all of
+                            the
+                            following:
+                        </p>
+                        <ul>
+                            <li>Flower bed maintenance and improvements (weeding, pruning, planting, division etc)
+                            </li>
+                            <li>Lawn care (mowing, edging)
+                            </li>
+                            <li>Care and topiary of small hedges and trees (trimming, pruning)
+                            </li>
+                            <li>Planting advice
+                            </li>
+                            <li>Other services as agreed-upon by both parties</li>
+                        </ul>
+
+                        <h5 class="modal-title">Scheduled Work:</h5>
+                        <p>The Gardener will make reasonable efforts to complete the services on the agreed dates.
+                            However,
+                            weather and other
+                            factors beyond their control may affect timelines. In such cases, the Gardener will notify
+                            the
+                            Customer promptly of any
+                            necessary rescheduling.</p>
+                        <h5 class="modal-title">Access & Security Arrangements:</h5>
+                        <p>The Customer shall ensure access to the Gardens by providing keys, access codes, or
+                            availability
+                            to grant entry on the
+                            required days and times.</p>
+                        <h5 class="modal-title">Garden Waste Disposal Terms:</h5>
+                        <p>Garden waste will be disposed of in the Customer's green bin (or equivalent) unless
+                            otherwise
+                            agreed. If the waste
+                            exceeds bin capacity, the Customer is responsible for alternative disposal arrangements.</p>
+                        <h5 class="modal-title">New Planting:</h5>
+                        <p>The Customer agrees to follow all reasonable care instructions provided by the Gardener, or
+                            manufacturer for newly
+                            planted items. The Gardener is not liable for any plant failure or death due to the
+                            Customer’s
+                            actions, weather
+                            conditions, or other factors beyond the Gardener’s control.</p>
+                        <h5 class="modal-title">Facilities:</h5>
+                        <p>The Customer shall provide the Gardener with access to the Customer’s toilet and hand
+                            washing
+                            facilities during the
+                            performance of the services.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <a href="/downloads/gardening-contract-v1.2.pdf" class="btn btn-primary" role="button"
+                            download>Download a Copy</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -524,6 +607,16 @@
             <div class="row">
                 <div class="col">
                     <h2 class="fw-semibold" id="contact">Contact</h2>
+
+                    <div class="alert alert-info" role="alert">
+                        <i class="fa-solid fa-circle-info me-2"></i>
+                        Unfortunately, I am unable to accept new customers as my diary is full. However, you can fill
+                        out the contact form below
+                        to be added to my waiting list. I’ll contact you if a regular opening becomes available.
+                    </div>
+
+
+
                     <div id="contact-submit-success" class="alert alert-success d-none" role="alert">
                         Your message has been sent successfully. I aim to respond to queries within two working days.
                     </div>
