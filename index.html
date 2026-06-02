@@ -649,7 +649,6 @@
                             <label for="addressLineOneInput">Address Line 1</label>
                         </div>
 
-
                         <div class="row">
                             <div class="col-6">
                                 <div class="form-floating mb-3">
@@ -669,10 +668,92 @@
                             </div>
                         </div>
 
+                        <!-- New Stuff Here-->
+                        <div class="row">
+                            <div class="col-6">
+                                <select class="form-select needs-validation"
+                                    aria-label="How often would you like a visit" id="frequency" name="frequency"
+                                    required>
+                                    <option selected>How often would you like a visit?</option>
+                                    <option value="1">Weekly</option>
+                                    <option value="2">Fortnight</option>
+                                    <option value="3">Monthly</option>
+                                </select>
+                            </div>
+                            <div class="col-6">
+                                <select class="form-select  mb-3" aria-label="How many hours per visit" id="hours"
+                                    name="hours" required>
+                                    <option selected>How many hours per visit were you thinking?</option>
+                                    <option value="1">1 hour</option>
+                                    <option value="2">2 hours</option>
+                                    <option value="3">3 hours</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row mb-3 ps-2">
+                            <legend class="col-form-label">What gardening services do you require?</legend>
+                            <div class="col-6">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="Flower bed maintenance"
+                                        id="flowerBedMaintenanceCheck" name="flower_bed_maintenance">
+                                    <label class="form-check-label" for="flowerBedMaintenanceCheck">
+                                        Flower bed maintenance
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="Vegetable bed maintenance"
+                                        id="vegetableBedMaintenanceCheck" name="vegetable_bed_maintenance">
+                                    <label class="form-check-label" for="vegetableBedMaintenanceCheck">
+                                        Vegetable bed maintenance
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="Patio weeding"
+                                        id="patioWeedingCheck" name="patio_weeding">
+                                    <label class="form-check-label" for="patioWeedingCheck">
+                                        Patio weeding
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-6 ps-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="Hedge cutting"
+                                        id="hedgeCuttingCheck" name="hedge_cutting">
+                                    <label class="form-check-label" for="hedgeCuttingCheck">
+                                        Hedge cutting
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="Grass cutting"
+                                        id="grassCuttingCheck" name="grass_cutting">
+                                    <label class="form-check-label" for="grassCuttingCheck">
+                                        Grass cutting
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="Planting advice"
+                                        id="plantingAdviceCheck" name="planting_advice">
+                                    <label class="form-check-label" for="plantingAdviceCheck">
+                                        Planting advice
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="unsuitableTimesInput" style="height: 100px"
+                                placeholder="Unsuitable times" name="unsuitable_times">
+                            <label for="unsuitableTimesInput">Do you have any days of the week or times that wouldn't be
+                                suitable
+                                for you?</label>
+                        </div>
+                        <!-- New Stuff End -->
+
+
                         <div class="form-floating">
                             <textarea class="form-control needs-validation" placeholder="Enter your message here"
                                 id="messageInput" style="height: 100px" name="message" required></textarea>
-                            <label for="messageInput">Message</label>
+                            <label for="messageInput">Anything else you'd like to add?</label>
                         </div>
                         <button id="submit-btn" type="submit" class="btn btn-success mt-3">Submit</button>
                     </form>
@@ -692,7 +773,6 @@
             <small><i class="fa fa-code me-2"></i>Code by Mark Branscombe | &copy; 2026</small>
         </p>
     </footer>
-
 
     <!-- Booststrap Javascript-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
