@@ -239,3 +239,7 @@ h2 {
 .border-gardeners-guild {
     border-color: var(--gardeners-guild-green) !important;
 }
+
+.form-select-lg {
+    font-size: 1rem;
+}
